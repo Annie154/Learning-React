@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learning-React</title>
+    <link rel="stylesheet" href="index.css" />
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+    ></script>
+    <script src="main.js"></script>
+  </head>
+  <body>
+    <h1>My heading</h1>
+    <div id="root">
+      <!-- <h1>Hello World</h1> -->
+
+      <!-- if we uncomment this heading then firstly it will load n then in milliseconds render method will replace it with react element we created. This is happening because script tag will come after this heading -->
+    </div>
+    <h2>Second heading</h2>
+
+    <!-- putting these headings around root div tells that react only works on root element(which we created using createRoot, the name of id can be anything but it will work on that). -->
+    <!-- So because of this we can use react in a portion of an app. So that's why it's not a full fledged framework but a library of javascript -->
+
+    <!-- cdn links  -->
+    <!-- A cross-origin request is a request for a resource (e.g. style sheets, iframes, images, fonts, or scripts) from another domain. -->
+    <!-- For instance, the domain name example.com might translate to the physical address 198.102.434.8. Other examples of domain names are google.com and wikipedia.org.  Using a domain name to identify a location on the Internet rather than the numeric IP address makes it much easier to remember and type web addresses. -->
+
+    <!-- Order of script tag should be this. If we put main.js above Cdn links, it won't identify React  -->
+    <!-- if we put react-dom link above react then it also won't work because ReactDOM.createRoot function must be defined in React  -->
+  </body>
+</html>
