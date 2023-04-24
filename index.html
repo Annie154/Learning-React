@@ -6,15 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Learning-React</title>
     <link rel="stylesheet" href="index.css" />
-    <script
-      crossorigin
-      src="https://unpkg.com/react@18/umd/react.development.js"
-    ></script>
-    <script
-      crossorigin
-      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
-    ></script>
-    <script src="main.js"></script>
   </head>
   <body>
     <h1>My heading</h1>
@@ -31,8 +22,17 @@
     <!-- cdn links  -->
     <!-- A cross-origin request is a request for a resource (e.g. style sheets, iframes, images, fonts, or scripts) from another domain. -->
     <!-- For instance, the domain name example.com might translate to the physical address 198.102.434.8. Other examples of domain names are google.com and wikipedia.org.  Using a domain name to identify a location on the Internet rather than the numeric IP address makes it much easier to remember and type web addresses. -->
-
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+    ></script>
+    
     <!-- Order of script tag should be this. If we put main.js above Cdn links, it won't identify React  -->
     <!-- if we put react-dom link above react then it also won't work because ReactDOM.createRoot function must be defined in React  -->
+    <script src="main.js"></script>
   </body>
 </html>
